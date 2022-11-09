@@ -15,7 +15,7 @@ const Header = () => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
+    <header>
       <Navbar dark color="dark" expand="md">
         <NavbarBrand href="/">Joshua Thompson</NavbarBrand>
         <NavbarToggler onClick={toggle} />
@@ -33,7 +33,7 @@ const Header = () => {
           </Nav>
         </Collapse>
       </Navbar>
-    </div>
+    </header>
   );
 };
 
