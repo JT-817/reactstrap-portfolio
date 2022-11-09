@@ -16,7 +16,6 @@ const Avatar = () => {
         <p>I'm a frontend developer working with react.</p>
         </Col>
       </Row>
-      <hr />
     </>
   );
 };
