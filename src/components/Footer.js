@@ -1,6 +1,5 @@
 import { Container, Col, Row } from "reactstrap";
 
-
 const Footer = () => {
   return (
     <Container fluid className="bg-dark text-light text-center">
@@ -17,6 +16,6 @@ const Footer = () => {
       </Row>
     </Container>
   );
-}
+};
 
-export default Footer
+export default Footer;
