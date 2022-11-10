@@ -6,8 +6,8 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
 } from "reactstrap";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -22,13 +22,19 @@ const Header = () => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>
             <NavItem>
-              <NavLink href="/">Home</NavLink>
+              <NavLink className="nav-link" to="/">
+                Home
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/">Contact</NavLink>
+              <NavLink className="nav-link" to="/contact">
+                Contact
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/">Blog</NavLink>
+              <NavLink className="nav-link" to="/blog">
+                Blog
+              </NavLink>
             </NavItem>
           </Nav>
         </Collapse>

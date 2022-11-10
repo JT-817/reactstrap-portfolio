@@ -1,4 +1,5 @@
 import { Container, Col, Row } from "reactstrap";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -9,7 +10,10 @@ const Footer = () => {
         </Row>
         <Row>
           <Col>
-            <a href="/">Home</a> <a href="/">Blog</a> <a href="/">Contact</a>
+            <Link className="nav-link" to="/">Home</Link>
+            <Link className="nav-link" to="/contact">Contact</Link>
+            <Link className="nav-link" to="/blog">Blog</Link>
+            {/* <a href="/">Home</a> <a href="/">Blog</a> <a href="/">Contact</a> */}
           </Col>
         </Row>
         <Row>
